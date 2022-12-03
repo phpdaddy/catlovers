@@ -4,6 +4,9 @@ import App from './App';
 import { createTheme, CssBaseline, responsiveFontSizes, ThemeProvider } from '@mui/material';
 import { BrowserRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
+import axios from 'axios';
+
+axios.defaults.headers.common['x-api-key'] = 'live_Tivop0P7ED81pJp0L8LiCHF9ZXfUfs6ja1H7MViVYsFSYRDhU4qdDK1jSRsWa8zC';
 
 let customTheme = createTheme({
     palette: {

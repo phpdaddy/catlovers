@@ -13,16 +13,20 @@ import { Link } from 'react-router-dom';
 
 const pages = [
     {
-        title: 'Users',
-        link: '/users',
+        title: 'Cat images',
+        link: '/cat-images',
     },
     {
-        title: 'Posts',
-        link: '/posts',
+        title: 'Breeds',
+        link: '/breeds',
+    },
+    {
+        title: 'Favorites',
+        link: '/favorites',
     },
 ];
 
-const AppBar = () => {
+export const AppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -98,4 +102,3 @@ const AppBar = () => {
         </MuiAppBar>
     );
 };
-export default AppBar;
