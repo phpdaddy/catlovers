@@ -7,11 +7,13 @@ import { createGlobalStyle } from 'styled-components';
 
 let customTheme = createTheme({
     palette: {
+        mode: 'dark',
         background: {
-            default: '#815656',
+            default: '#363434',
+            paper: '#342f2f',
         },
         primary: {
-            main: '#412c2c',
+            main: '#282828',
         },
     },
 });

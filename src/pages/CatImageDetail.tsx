@@ -10,19 +10,19 @@ import Paper from '../components/Paper';
 
 const Root = styled('div')``;
 
-const PostDetail = () => {
+const CatImageDetail = () => {
     const [post, setPost] = useState<Post | undefined>();
     const [comments, setComments] = useState<Comment[]>([]);
     const params = useParams();
 
     useEffect(() => {
         const fetchPost = async () => {
-            const response = await axios.get(`${BackendUrl}/posts/${params.postId}`);
+            const response = await axios.get(`${BackendUrl}/posts/${params.catImageId}`);
             setPost(response.data);
         };
         fetchPost();
         const fetchComments = async () => {
-            const response = await axios.get(`${BackendUrl}/posts/${params.postId}/comments`);
+            const response = await axios.get(`${BackendUrl}/posts/${params.catImageId}/comments`);
             setComments(response.data);
         };
         fetchComments();
@@ -30,7 +30,7 @@ const PostDetail = () => {
 
     return (
         <Root>
-            {post && (
+            {/*{post && (
                 <Paper elevation={3} key={`postItem${post.id}`}>
                     <Typography variant="h4">
                         <strong>{post.title}</strong>
@@ -40,7 +40,7 @@ const PostDetail = () => {
                         <Link to={`/users/${post.userId}`}>Author</Link>
                     </div>
                 </Paper>
-            )}
+            )}*/}
             <Typography variant="h5" sx={{ marginBottom: '10px', marginLeft: '10px' }}>
                 Comments
             </Typography>
@@ -57,4 +57,4 @@ const PostDetail = () => {
     );
 };
 
-export default PostDetail;
+export default CatImageDetail;

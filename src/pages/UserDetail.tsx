@@ -60,7 +60,7 @@ export const UserDetail = () => {
             <Typography variant="h5" sx={{ marginBottom: '10px', marginLeft: '10px' }}>
                 Author&apos;s posts
             </Typography>
-            {posts.map((post) => (
+            {/*  {posts.map((post) => (
                 <Paper key={`postItem${post.id}`} elevation={3}>
                     <Typography variant="h6">
                         <strong>
@@ -69,7 +69,7 @@ export const UserDetail = () => {
                     </Typography>
                     <div>{post.body}</div>
                 </Paper>
-            ))}
+            ))}*/}
         </Root>
     );
 };

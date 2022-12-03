@@ -1,1 +1,1 @@
-export const BackendUrl = 'https://jsonplaceholder.typicode.com';
+export const BackendUrl = 'https://api.thecatapi.com/v1';
