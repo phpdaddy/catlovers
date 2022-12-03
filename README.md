@@ -1,4 +1,4 @@
-# CATLOVER
+# CATLOVERS
 ### Scripts
 #### `yarn`
 #### `yarn start`
